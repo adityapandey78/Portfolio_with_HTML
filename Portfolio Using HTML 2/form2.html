@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c8c8;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        h5 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        iframe {
+            display: block;
+            margin: 15px 0;
+        }
+        div  {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        .gif-embed {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .gif-embed img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action.php">
+        <input type="text" placeholder="Name">
+        <br><br>
+        <input type="text" placeholder="Email">
+        <br><br>
+        <h5>Please Select Meeting Preference &#128187</h5>
+        <label for="Google Meet">
+            <input type="radio" value="Google Meet" name="Google Meet" id="Google Meet"> Google Meet
+        </label>
+        <br><br>
+        <label for="Zoom">
+            <input type="radio" value="Zoom" name="Zoom" id="Zoom"> Zoom
+        </label>
+        <br><br>
+        <h5>Select Your Purpose</h5>
+        <label for="Business Proposal">
+            <input type="checkbox" value="Business Proposal" name="Purpose" id="Business Proposal"> Business Proposal
+        </label>
+        <label for="AMA on Twitter">
+            <input type="checkbox" value="AMA on Twitter" name="Purpose" id="AMA on Twitter"> AMA on Twitter
+        </label>
+        <label for="Collaboration">
+            <input type="checkbox" value="Collaboration" name="Purpose" id="Collaboration"> Collaboration
+        </label>
+        <label for="Freelance">
+            <input type="checkbox" value="Freelance" name="Purpose" id="Freelance"> Freelance
+        </label>
+        <br><br>
+        <h5>Select Your Time Zone &#128151</h5>
+        <select name="Time Zone" id="Time">
+            <option value="APAC">APAC</option>
+            <option value="LATAM">LATAM</option>
+            <option value="USA+Canada">USA+Canada</option>
+            <option value="SEA">SEA</option>
+            <option value="Europe">Europe</option>
+            <option value="Africa">Africa</option>
+        </select>
+        <br><br>
+        <h5>Please give feedback below&#128509</h5>
+        <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Please give your feedback"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h5>If you want to watch a video, enjoy</h5>
+
+    <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=WOyM3fiwsC-8rJ7C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="gif-embed">     
+    <h5> Anddd My first Project Completed &#128151</h5>
+        <div class="tenor-gif-embed" data-postid="14600410" data-share-method="host" data-width="450" data-height="250"><div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    </div>
+</body>
+</html>
